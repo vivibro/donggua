@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dg-common/dg-common.iml" filepath="$PROJECT_DIR$/dg-common/dg-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-gateway/dg-gateway.iml" filepath="$PROJECT_DIR$/dg-gateway/dg-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-item/dg-item.iml" filepath="$PROJECT_DIR$/dg-item/dg-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-item/dg-item-interface/dg-item-interface.iml" filepath="$PROJECT_DIR$/dg-item/dg-item-interface/dg-item-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-item/dg-item-service/dg-item-service.iml" filepath="$PROJECT_DIR$/dg-item/dg-item-service/dg-item-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-registry/dg-registry.iml" filepath="$PROJECT_DIR$/dg-registry/dg-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-upload/dg-upload.iml" filepath="$PROJECT_DIR$/dg-upload/dg-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/donggua.iml" filepath="$PROJECT_DIR$/.idea/donggua.iml" />
+    </modules>
+  </component>
+</project>

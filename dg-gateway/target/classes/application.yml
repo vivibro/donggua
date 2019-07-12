@@ -1,0 +1,33 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: api-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+zuul:
+  prefix: /api # 添加路由前缀
+  routes:
+    item-service: /item/**
+#    以下strip-prefix属性配置不会截断upload路径，可以由服务继续拦截upload
+    upload-service: /upload/**
+#      path: /upload/**
+#      serviceId: upload-service
+#      strip-prefix: false
+#  ignored-services:
+#    - upload-service
+ribbon:
+  ConnectTimeout: 10000 # 连接超时时间(ms)
+  ReadTimeout: 35000 # 通信超时时间(ms)
+  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 0 # 同一服务不同实例的重试次数
+  MaxAutoRetries: 0 # 同一实例的重试次数
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisecond: 50000 # 熔断超时时长：10000ms
