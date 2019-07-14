@@ -11,13 +11,7 @@ zuul:
   prefix: /api # 添加路由前缀
   routes:
     item-service: /item/**
-#    以下strip-prefix属性配置不会截断upload路径，可以由服务继续拦截upload
-    upload-service: /upload/**
-#      path: /upload/**
-#      serviceId: upload-service
-#      strip-prefix: false
-#  ignored-services:
-#    - upload-service
+
 ribbon:
   ConnectTimeout: 10000 # 连接超时时间(ms)
   ReadTimeout: 35000 # 通信超时时间(ms)
