@@ -20,4 +20,5 @@ public class UploadController {
     public ResponseEntity<String> uploadImage(@RequestParam("file")MultipartFile file){
         return ResponseEntity.ok(uploadService.uploadImage(file));
     }
+
 }

@@ -16,7 +16,7 @@ import java.util.List;
 public class BrandController {
     @Autowired
     private BrandService brandService;
-
+//    查询表单
     @GetMapping("page")
     public ResponseEntity<PageResult<Brand>> queryBrandByPage(
             @RequestParam(value = "page",defaultValue = "1")Integer page,
@@ -41,4 +41,11 @@ public class BrandController {
         brandService.saveBrand(brand,cids);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
+//    根据分类查品牌
+    @GetMapping("cid/{id}")
+    public ResponseEntity<List<Brand>> queryBrandsByCName(@PathVariable("id")Long cid){
+
+        return ResponseEntity.ok(brandService.queryBrandByCName(cid));
+    }
+
 }
