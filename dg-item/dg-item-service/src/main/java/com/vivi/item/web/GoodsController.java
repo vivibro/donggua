@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("goods")
 public class GoodsController {
 
     @Autowired
@@ -32,16 +32,21 @@ public class GoodsController {
             @RequestParam(value = "page", defaultValue = "1") Integer page,
             @RequestParam(value = "rows", defaultValue = "5") Integer rows,
             @RequestParam(value = "key", required = false) String key,
-            @RequestParam(value = "sortBy",required = false)String sortBy,
-            @RequestParam(value = "saleable",defaultValue = "true") Boolean saleable) {
+            @RequestParam(value = "saleable",defaultValue = "true") Boolean saleable,
+            @RequestParam(value = "sortBy", required = false) String sortBy,
+            @RequestParam(value = "desc", defaultValue = "false") Boolean desc){
+        System.out.print("1");
         // 分页查询spu信息
-        PageResult<SpuBo> result = this.goodsService.querySpuByPageAndSort(page, rows,saleable, key);
+        PageResult<SpuBo> result = this.goodsService.querySpuByPageAndSort(page, rows,saleable, key,sortBy,desc);
         if (result == null || result.getItems().size() == 0) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return ResponseEntity.ok(result);
     }
-//    查询SpuDetail
+
+
+
+    //    查询SpuDetail
     @GetMapping("/spu/detail/{id}")
     public ResponseEntity<SpuDetail> querySpuDetailById(@PathVariable("id") Long id) {
         SpuDetail detail = this.goodsService.querySpuDetailById(id);
@@ -51,7 +56,7 @@ public class GoodsController {
         return ResponseEntity.ok(detail);
     }
 //    查询sku
-    @GetMapping("/goods/sku/list")
+    @GetMapping("/sku/list")
     public ResponseEntity<List<Sku>> querySkuBySpuId(@RequestParam("id") Long id) {
       List<Sku> skus = this.goodsService.querySkuBySpuId(id);
       if (skus == null || skus.size() == 0) {

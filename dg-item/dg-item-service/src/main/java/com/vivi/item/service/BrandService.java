@@ -76,7 +76,13 @@ public class BrandService {
     }
 
     public List<Brand> queryBrandByCName(Long cid) {
-
         return brandMapper.queryBrandByCId(cid);
+    }
+    public Brand queryBrandById(Long id){
+        Brand brand = brandMapper.selectByPrimaryKey(id);
+        if (brand==null){
+            throw new DgException(ExceptionEnum.BRAND_NOT_FOUND);
+        }
+        return brand;
     }
 }

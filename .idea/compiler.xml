@@ -12,27 +12,32 @@
         <module name="dg-item-service" />
         <module name="dg-registry" />
         <module name="dg-upload" />
+        <module name="dgsearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dg-common" target="1.8" />
+      <module name="dg-elasticsearch" target="1.8" />
       <module name="dg-gateway" target="1.8" />
       <module name="dg-item" target="1.8" />
       <module name="dg-item-interface" target="1.8" />
       <module name="dg-item-service" target="1.8" />
       <module name="dg-registry" target="1.8" />
       <module name="dg-upload" target="1.8" />
+      <module name="dgsearch" target="1.8" />
       <module name="donggua" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="dg-common" options="-parameters" />
+      <module name="dg-elasticsearch" options="-parameters" />
       <module name="dg-gateway" options="-parameters" />
       <module name="dg-item-interface" options="-parameters" />
       <module name="dg-item-service" options="-parameters" />
       <module name="dg-registry" options="-parameters" />
       <module name="dg-upload" options="-parameters" />
+      <module name="dgsearch" options="-parameters" />
     </option>
   </component>
 </project>

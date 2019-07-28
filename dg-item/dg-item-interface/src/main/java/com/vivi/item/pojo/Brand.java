@@ -12,7 +12,8 @@ import javax.persistence.Table;
 @Data
 public class Brand {
     @Id
-    @KeySql(useGeneratedKeys=true)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @KeySql(useGeneratedKeys=true)
     private Long id;
     private String name;// 品牌名称
     private String image;// 品牌图片

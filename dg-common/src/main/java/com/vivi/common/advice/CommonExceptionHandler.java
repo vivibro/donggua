@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class CommonExceptionHandler {
 
 
-//    可以拦截不同的异常进行不同的处理，这里拦截的是RuntimeException
+//    可以拦截不同的异常进行不同的处理，这里拦截的是DgException
     @ExceptionHandler(DgException.class)
     public ResponseEntity<ExceptionResult> handleException(DgException e){
         ExceptionEnum exceptionEnum = e.getExceptionEnum();
