@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class DgSearch {
+public class DgSearchApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DgSearch.class, args);
+        SpringApplication.run(DgSearchApplication.class, args);
     }
 }
