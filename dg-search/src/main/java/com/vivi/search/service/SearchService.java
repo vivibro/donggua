@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vivi.common.utils.JsonUtils;
+import com.vivi.common.vo.PageResult;
 import com.vivi.item.pojo.Brand;
 import com.vivi.item.pojo.Sku;
 import com.vivi.item.pojo.Spu;
@@ -13,9 +14,18 @@ import com.vivi.search.client.CategoryClient;
 import com.vivi.search.client.GoodsClient;
 import com.vivi.search.client.SpecificationClient;
 import com.vivi.search.pojo.Goods;
+import com.vivi.search.pojo.SearchRequest;
+import com.vivi.search.repository.GoodsRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.elasticsearch.core.query.FetchSourceFilter;
+import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
+import org.springframework.data.elasticsearch.core.query.SourceFilter;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -35,6 +45,8 @@ public class SearchService {
 
     @Autowired
     private SpecificationClient specificationClient;
+    @Autowired
+    private GoodsRepository goodsRepository;
 
     private ObjectMapper mapper = new ObjectMapper();
 
@@ -105,6 +117,30 @@ public class SearchService {
         Good.setSkus(mapper.writeValueAsString(skuLists)); //所有sku的集合的json格式
         Good.setSpecs(specMap); //所有的可搜索的规格参数
         return Good;
+    }
+
+//    搜索
+    public PageResult<Goods> search(SearchRequest request) {
+        //        分页
+//        elasticSearch初始页默认为0
+        Integer page = request.getPage()-1;
+        Integer size = request.getSize();
+        //        过滤
+        String key = request.getKey();
+
+        NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
+        queryBuilder.withPageable(PageRequest.of(page, size));
+        queryBuilder.withQuery(QueryBuilders.matchQuery("all",key));
+//        过滤返回结果
+        queryBuilder.withSourceFilter(new FetchSourceFilter(new String[]{"id","subtitle","skus"},null));
+
+//        查询
+        Page<Goods> result = goodsRepository.search(queryBuilder.build());
+//        解析结果
+        long total = result.getTotalElements();
+        int totalPages = result.getTotalPages();
+        List<Goods> content = result.getContent();
+        return new PageResult<Goods>(total, totalPages, content);
     }
 
 

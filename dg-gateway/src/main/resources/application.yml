@@ -12,6 +12,7 @@ zuul:
   routes:
     item-service: /item/**
     upload-service: /upload/**
+    search-service: /search/**
 
 ribbon:
   ConnectTimeout: 10000 # 连接超时时间(ms)
