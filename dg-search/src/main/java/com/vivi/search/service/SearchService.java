@@ -103,7 +103,6 @@ public class SearchService {
                 }
             });
         });
-
         Good.setSubTitle(spu.getSubTitle());
         Good.setId(spu.getId());
         Good.setBrandId(spu.getBrandId());
@@ -132,7 +131,7 @@ public class SearchService {
         queryBuilder.withPageable(PageRequest.of(page, size));
         queryBuilder.withQuery(QueryBuilders.matchQuery("all",key));
 //        过滤返回结果
-        queryBuilder.withSourceFilter(new FetchSourceFilter(new String[]{"id","subtitle","skus"},null));
+        queryBuilder.withSourceFilter(new FetchSourceFilter(new String[]{"id","subTitle","skus"},null));
 
 //        查询
         Page<Goods> result = goodsRepository.search(queryBuilder.build());
