@@ -32,4 +32,7 @@ public class CategoryService {
     public List<String> queryNameByIds(List<Long> ids) {
         return this.categoryMapper.selectByIdList(ids).stream().map(Category::getName).collect(Collectors.toList());
     }
+    public List<Category> queryNameByIdsRC(List<Long> ids){
+        return this.categoryMapper.selectByIdList(ids);
+    }
 }

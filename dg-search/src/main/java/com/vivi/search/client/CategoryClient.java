@@ -10,7 +10,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @FeignClient("item-service")
-
 public interface CategoryClient extends CategoryApi {
-
 }

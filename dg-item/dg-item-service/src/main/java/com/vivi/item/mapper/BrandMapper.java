@@ -4,12 +4,14 @@ import com.vivi.item.pojo.Brand;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import tk.mybatis.mapper.additional.idlist.SelectByIdListMapper;
+import tk.mybatis.mapper.common.BaseMapper;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
 
-public interface BrandMapper extends Mapper<Brand> {
+public interface BrandMapper extends Mapper<Brand>, SelectByIdListMapper<Brand,Long> {
 
 //    手写一个sql语句用于插入中间表，用到Insert注解
     @Insert("INSERT INTO tb_category_brand (category_id, brand_id) VALUES (#{cid},#{bid})")

@@ -2,6 +2,7 @@ package com.vivi.item.web;
 
 import com.vivi.common.advice.exception.DgException;
 import com.vivi.common.enums.ExceptionEnum;
+import com.vivi.item.pojo.Brand;
 import com.vivi.item.pojo.Category;
 import com.vivi.item.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,14 @@ public class CategoryController {
         if(CollectionUtils.isEmpty(strings)){
             throw new DgException(ExceptionEnum.CATEGORY_NOT_FIND);
         }
-        return ResponseEntity.ok(categoryService.queryNameByIds(ids));
+        return ResponseEntity.ok(strings);
+    }
+    @GetMapping("namesRC")
+    public ResponseEntity<List<Category>> queryCategoryListByPidsRC(@RequestParam("ids")List<Long> ids){
+        List<Category> CS = categoryService.queryNameByIdsRC(ids);
+        if(CollectionUtils.isEmpty(CS)){
+            throw new DgException(ExceptionEnum.CATEGORY_NOT_FIND);
+        }
+        return ResponseEntity.ok(CS);
     }
 }

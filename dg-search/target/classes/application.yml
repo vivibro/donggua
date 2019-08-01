@@ -8,7 +8,7 @@ spring:
       cluster-name: elasticsearch
       cluster-nodes: 47.108.69.93:9300
 #  表示为空的字段被排除不返回，这样前端拿到的就不会有空key
-#  jackson:
+  jackson:
     default-property-inclusion: non_null
 eureka:
   client:
