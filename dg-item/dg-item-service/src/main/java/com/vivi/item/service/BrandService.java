@@ -87,7 +87,6 @@ public class BrandService {
     }
 
     public List<Brand> queryBrandByIds(List<Long> ids) {
-//        System.out.print(brandMapper.selectByIdList(ids).toString());
         return brandMapper.selectByIdList(ids);
     }
 }

@@ -17,9 +17,7 @@ import com.vivi.search.pojo.SearchResult;
 import com.vivi.search.repository.GoodsRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.index.query.MatchQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.*;
 import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.Aggregations;
@@ -148,7 +146,9 @@ public class SearchService {
 
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
         queryBuilder.withPageable(PageRequest.of(page, size));
-        QueryBuilder bascQuery =QueryBuilders.matchQuery("all",key);
+//        QueryBuilder bascQuery =QueryBuilders.matchQuery("all",key);
+//        查询条件做成bool类型，查询条件与过滤条件要分开写
+        QueryBuilder bascQuery = buildBasicQuert(request);
         queryBuilder.withQuery(bascQuery);
 //        过滤返回结果
         queryBuilder.withSourceFilter(new FetchSourceFilter(new String[]{"id","subTitle","skus"},null));
@@ -173,7 +173,7 @@ public class SearchService {
 //        解析聚合结果
         Aggregations aggs = result.getAggregations();
         List<Category> categories = parseCategoryAgg(aggs.get(categoryAggName));
-        System.out.print(categories.toString());
+       
         List<Brand> brands = parseBrandAgg(aggs.get(brandAggName));
 //        如果搜索结果仅一个分类，才进行聚合更详细的参数
         List<Map<String,Object>> specs = new ArrayList<>();
@@ -185,7 +185,52 @@ public class SearchService {
         return searchResult;
     }
 
-//    聚合查询品牌
+    private QueryBuilder buildBasicQuert(SearchRequest request) {
+        BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery();
+        //基本查询条件
+        queryBuilder.must(QueryBuilders.matchQuery("all",request.getKey()).operator(Operator.AND));
+        //过滤条件构造器
+        BoolQueryBuilder filterQueryBuilder = QueryBuilders.boolQuery();
+        //整理过滤条件
+        Map<String,String> filter = request.getFilter();
+        for (Map.Entry<String,String> entry : filter.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue();
+            String regex = "^(\\d+\\.?\\d*)-(\\d+\\.?\\d*)$";
+            if (!"key".equals(key)) {
+                if ("price".equals(key)){
+                    if (!value.contains("元以上")) {
+                        String[] nums = StringUtils.substringBefore(value, "元").split("-");
+                        filterQueryBuilder.must(QueryBuilders.rangeQuery(key).gte(Double.valueOf(nums[0]) * 100).lt(Double.valueOf(nums[1]) * 100));
+                    }else {
+                        String num = StringUtils.substringBefore(value,"元以上");
+                        filterQueryBuilder.must(QueryBuilders.rangeQuery(key).gte(Double.valueOf(num)*100));
+                    }
+                }else {
+                    if (value.matches(regex)) {
+                        Double[] nums = NumberUtils.searchNumber(value, regex);
+                        //数值类型进行范围查询   lt:小于  gte:大于等于
+                        filterQueryBuilder.must(QueryBuilders.rangeQuery("specs." + key).gte(nums[0]).lt(nums[1]));
+                    } else {
+                        //商品分类和品牌要特殊处理
+                        if (key != "cid3" && key != "brandId") {
+                            key = "specs." + key + ".keyword";
+                        }
+                        //字符串类型，进行term查询
+                        filterQueryBuilder.must(QueryBuilders.termQuery(key, value));
+                    }
+                }
+            } else {
+                break;
+            }
+        }
+        //添加过滤条件
+        queryBuilder.filter(filterQueryBuilder);
+        return queryBuilder;
+    }
+
+
+    //    聚合查询品牌
     private List<Brand> parseBrandAgg(LongTerms aggregation) {
         List<Long> ids = aggregation.getBuckets().stream()
                 .map(b -> b.getKeyAsNumber().longValue()).collect(Collectors.toList());
@@ -323,5 +368,15 @@ public class SearchService {
             specs.add(spec);
         });
         return specs;
+    }
+
+    public void creatOrUpdateIndex(Long spuID) throws IOException {
+        Spu spu = goodsClient.querySpuById(spuID);
+        Goods goods = buildGoods(spu);
+        goodsRepository.save(goods);
+    }
+
+    public void deleteIndex(Long spuID) {
+        goodsRepository.deleteById(spuID);
     }
 }

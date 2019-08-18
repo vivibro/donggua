@@ -17,6 +17,6 @@ public class SpuBo extends Spu {
     SpuDetail spuDetail;// 商品详情
     @Transient
     List<Sku> skus;// sku列表
-    
-    // 略 。。
+
+
 }

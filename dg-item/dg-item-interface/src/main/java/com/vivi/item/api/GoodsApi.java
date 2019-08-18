@@ -2,6 +2,7 @@ package com.vivi.item.api;
 
 import com.vivi.common.vo.PageResult;
 import com.vivi.item.pojo.Sku;
+import com.vivi.item.pojo.Spu;
 import com.vivi.item.pojo.SpuBo;
 import com.vivi.item.pojo.SpuDetail;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +16,6 @@ import java.util.List;
 public interface GoodsApi {
     @GetMapping("/spu/detail/{id}")
     SpuDetail querySpuDetailById(@PathVariable("id") Long id);
-
     @GetMapping("/sku/list")
     List<Sku> querySkuBySpuId(@RequestParam("id") Long id);
     @GetMapping("/spu/page")
@@ -24,4 +24,6 @@ public interface GoodsApi {
             @RequestParam(value = "rows", defaultValue = "5") Integer rows,
             @RequestParam(value = "key", required = false) String key,
             @RequestParam(value = "saleable",defaultValue = "true") Boolean saleable);
+    @GetMapping("spu/{id}")
+    Spu querySpuById(@RequestParam("id") Long id);
 }

@@ -52,6 +52,11 @@
             <artifactId>dg-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--消息-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
     </dependencies>
 
 

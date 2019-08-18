@@ -10,6 +10,7 @@
         <module name="dg-gateway" />
         <module name="dg-item-interface" />
         <module name="dg-item-service" />
+        <module name="dg-page" />
         <module name="dg-registry" />
         <module name="dg-upload" />
         <module name="dgsearch" />
@@ -22,6 +23,7 @@
       <module name="dg-item" target="1.8" />
       <module name="dg-item-interface" target="1.8" />
       <module name="dg-item-service" target="1.8" />
+      <module name="dg-page" target="1.8" />
       <module name="dg-registry" target="1.8" />
       <module name="dg-upload" target="1.8" />
       <module name="dgsearch" target="1.8" />
@@ -35,6 +37,7 @@
       <module name="dg-gateway" options="-parameters" />
       <module name="dg-item-interface" options="-parameters" />
       <module name="dg-item-service" options="-parameters" />
+      <module name="dg-page" options="-parameters" />
       <module name="dg-registry" options="-parameters" />
       <module name="dg-upload" options="-parameters" />
       <module name="dgsearch" options="-parameters" />

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/dg-item/dg-item.iml" filepath="$PROJECT_DIR$/dg-item/dg-item.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-item/dg-item-interface/dg-item-interface.iml" filepath="$PROJECT_DIR$/dg-item/dg-item-interface/dg-item-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-item/dg-item-service/dg-item-service.iml" filepath="$PROJECT_DIR$/dg-item/dg-item-service/dg-item-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-page/dg-page.iml" filepath="$PROJECT_DIR$/dg-page/dg-page.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-registry/dg-registry.iml" filepath="$PROJECT_DIR$/dg-registry/dg-registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-upload/dg-upload.iml" filepath="$PROJECT_DIR$/dg-upload/dg-upload.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-search/dgsearch.iml" filepath="$PROJECT_DIR$/dg-search/dgsearch.iml" />

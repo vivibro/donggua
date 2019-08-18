@@ -2,6 +2,8 @@ package com.vivi.search.pojo;
 
 import lombok.Data;
 
+import java.util.Map;
+
 //用于搜索接收请求的body
 @Data
 public class SearchRequest {
@@ -9,10 +11,21 @@ public class SearchRequest {
 
     private Integer page;// 当前页
 
+    public void setFilter(Map<String, String> filter) {
+        this.filter = filter;
+    }
+
+    private Map<String,String> filter;
+
     private static final Integer DEFAULT_SIZE = 20;// 每页大小，不从页面接收，而是固定大小
     private static final Integer DEFAULT_PAGE = 1;// 默认页
-
+    private static final String DEFAULT_KEY = "手机";// 默认页
     public String getKey() {
+
+        if(key == ""){
+            return DEFAULT_KEY;
+        }
+        // 获取页码时做一些校验，不能小于1
         return key;
     }
 
@@ -34,5 +47,8 @@ public class SearchRequest {
 
     public Integer getSize() {
         return DEFAULT_SIZE;
+    }
+    public Map<String, String> getFilter() {
+        return filter;
     }
 }

@@ -2,6 +2,7 @@ package com.vivi.item.web;
 
 import com.vivi.common.vo.PageResult;
 import com.vivi.item.pojo.Sku;
+import com.vivi.item.pojo.Spu;
 import com.vivi.item.pojo.SpuBo;
 import com.vivi.item.pojo.SpuDetail;
 import com.vivi.item.service.GoodsService;
@@ -19,13 +20,8 @@ public class GoodsController {
     @Autowired
     private GoodsService goodsService;
 
-    /**
-     * 分页查询SPU
-     * @param page
-     * @param rows
-     * @param key
-     * @return
-     */
+
+
 //    获取商品清单列表
     @GetMapping("/spu/page")
     public ResponseEntity<PageResult<SpuBo>> querySpuByPage(
@@ -64,6 +60,8 @@ public class GoodsController {
       }
      return ResponseEntity.ok(skus);
     }
+
+
     @PostMapping("goods")
     public ResponseEntity<Void> saveGoods(@RequestBody SpuBo spuBo) {
         try {
@@ -72,6 +70,43 @@ public class GoodsController {
         } catch (Exception e) {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    /**
+     * 根据spuid查询spu
+     * @param spuId
+     * @return
+     */
+    @GetMapping("spu/{id}")
+    ResponseEntity<Spu> querySpuById(@RequestParam("id") Long spuId){
+        Spu spu = goodsService.querySpuById(spuId);
+        if(spu == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return ResponseEntity.ok(spu);
+    }
+
+    @PutMapping("goods")
+    public ResponseEntity<Void> updateGoods(@RequestBody SpuBo spuBo){
+        try{
+            this.goodsService.updateGoods(spuBo);
+            return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        }catch (Exception e){
+            e.printStackTrace();
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+
+        }
+    }
+    @DeleteMapping("goods")
+    public ResponseEntity<Void> deleteGoods(@RequestBody SpuBo spuBo){
+        try{
+            this.goodsService.deleteGoods(spuBo);
+            return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        }catch (Exception e){
+            e.printStackTrace();
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+
         }
     }
 }

@@ -16,6 +16,7 @@
         <module>dg-upload</module>
         <module>dg-elasticsearch</module>
         <module>dg-search</module>
+        <module>dg-page</module>
     </modules>
 
     <name>donggua</name>
