@@ -55,7 +55,6 @@ public class BrandService {
     public void saveBrand(Brand brand, List<Long> cids) {
         this.brandMapper.insert(brand);
         for (Long cid : cids) {
-            System.out.print(cid+" "+brand.getId());
             this.brandMapper.insertCategoryBrand(cid, brand.getId());
         }
 //        //新增品牌

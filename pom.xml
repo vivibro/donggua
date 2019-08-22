@@ -17,6 +17,7 @@
         <module>dg-elasticsearch</module>
         <module>dg-search</module>
         <module>dg-page</module>
+        <module>dg-sms</module>
     </modules>
 
     <name>donggua</name>
