@@ -18,6 +18,8 @@
         <module>dg-search</module>
         <module>dg-page</module>
         <module>dg-sms</module>
+        <module>dg-user</module>
+        <module>dg-auth</module>
     </modules>
 
     <name>donggua</name>

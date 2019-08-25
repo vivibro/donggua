@@ -54,7 +54,7 @@ public class BrandController {
     }
 
     @GetMapping("brands")
-    ResponseEntity<List<Brand>> queryBrandByIds(@RequestParam("ids")List<Long> ids){
+    public ResponseEntity<List<Brand>> queryBrandByIds(@RequestParam("ids")List<Long> ids){
         return ResponseEntity.ok(brandService.queryBrandByIds(ids));
     }
 

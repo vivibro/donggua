@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dg-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dg-auth/dg-auth-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dg-auth/dg-auth-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dg-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dg-elasticsearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dg-gateway" charset="UTF-8" />
@@ -13,6 +16,9 @@
     <file url="file://$PROJECT_DIR$/dg-search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dg-sms" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dg-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dg-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dg-user/dg-user-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dg-user/dg-user-service" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

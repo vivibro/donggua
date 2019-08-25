@@ -43,9 +43,10 @@ public class SmsListener {
             key = "sms.verify.dode"
     ))
     public void listen(Map<String,String> msg){
+
         String phone = msg.remove("phone");
         //短信限流
-        if (redisTemplate.opsForValue().get(KEY_PREFIX + phone).isEmpty()){
+        if (redisTemplate.opsForValue().get(KEY_PREFIX + phone) != null){
             return;
         }
         if(msg ==null){
@@ -59,7 +60,7 @@ public class SmsListener {
         smsUtils.sendSms(phone,prop.getSignName(),prop.getVerifyCodeTemplate(),JsonUtils.serialize(msg));
 
         //发送短信成功之后，把号码写入redis，并设置1分钟时长
-        redisTemplate.opsForValue().set(KEY_PREFIX + phone, String.valueOf(System.currentTimeMillis()),60, TimeUnit.MINUTES);
+        redisTemplate.opsForValue().set(KEY_PREFIX + phone, String.valueOf(System.currentTimeMillis()),1, TimeUnit.MINUTES);
         //发送短信日志
         log.info("[短信服务]，发送短信验证码，手机号：{}",phone);
 

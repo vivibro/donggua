@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Data
-@Component
+//@Component
 @ConfigurationProperties("dg.sms")
 public class SmsProperties {
     String accessKeyId;

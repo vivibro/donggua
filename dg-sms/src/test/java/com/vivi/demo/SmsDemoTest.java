@@ -21,8 +21,8 @@ public class SmsDemoTest {
     @Test
     public void sendSms() {
         HashMap<String, String> msg = new HashMap<>();
-        msg.put("phone", "13333333333");
-        msg.put("code","53261");
+        msg.put("phone", "18380117701");
+        msg.put("code","520520");
         amqpTemplate.convertAndSend("dg.sms.exchange","sms.verify.dode",msg);
     }
 }

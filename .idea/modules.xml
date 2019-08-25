@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dg-auth/dg-auth.iml" filepath="$PROJECT_DIR$/dg-auth/dg-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-auth/dg-auth-common/dg-auth-common.iml" filepath="$PROJECT_DIR$/dg-auth/dg-auth-common/dg-auth-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-auth/dg-auth-service/dg-auth-service.iml" filepath="$PROJECT_DIR$/dg-auth/dg-auth-service/dg-auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-common/dg-common.iml" filepath="$PROJECT_DIR$/dg-common/dg-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-gateway/dg-gateway.iml" filepath="$PROJECT_DIR$/dg-gateway/dg-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-item/dg-item.iml" filepath="$PROJECT_DIR$/dg-item/dg-item.iml" />
@@ -11,6 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/dg-registry/dg-registry.iml" filepath="$PROJECT_DIR$/dg-registry/dg-registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-sms/dg-sms.iml" filepath="$PROJECT_DIR$/dg-sms/dg-sms.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-upload/dg-upload.iml" filepath="$PROJECT_DIR$/dg-upload/dg-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-user/dg-user.iml" filepath="$PROJECT_DIR$/dg-user/dg-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-user/dg-user-interface/dg-user-interface.iml" filepath="$PROJECT_DIR$/dg-user/dg-user-interface/dg-user-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-user/dg-user-service/dg-user-service.iml" filepath="$PROJECT_DIR$/dg-user/dg-user-service/dg-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-search/dgsearch.iml" filepath="$PROJECT_DIR$/dg-search/dgsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/donggua.iml" filepath="$PROJECT_DIR$/.idea/donggua.iml" />
     </modules>

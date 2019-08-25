@@ -15,7 +15,12 @@ public enum ExceptionEnum {
     CATEGORY_NOT_FIND("商品分类没查到",404),
     UPLOAD_FILE_ERROR("文件上传失败",500 ),
     INVALOD_FILE_TYPE("无效文件类型", 500),
-    GOODS_ID_CANNOT_BE_NULL("商品id不能为空",400);
+    GOODS_ID_CANNOT_BE_NULL("商品id不能为空",400),
+    INVALID_USER_DATA_TYPE("请求数据有误",400),
+    INVALID_VERIFY_CODE("无效的验证码",400),
+    INVALID_USERNAME_OR_PASSWORD("用户名或密码有误",400),
+    CREATE_TOKEN_FAIL("用户凭证生成失败",500);
+
     private String msg;
     private int code;
 
