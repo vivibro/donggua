@@ -19,6 +19,7 @@ public enum ExceptionEnum {
     INVALID_USER_DATA_TYPE("请求数据有误",400),
     INVALID_VERIFY_CODE("无效的验证码",400),
     INVALID_USERNAME_OR_PASSWORD("用户名或密码有误",400),
+    UNAUTHORIZED("无权访问",403),
     CREATE_TOKEN_FAIL("用户凭证生成失败",500);
 
     private String msg;

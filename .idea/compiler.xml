@@ -14,11 +14,11 @@
         <module name="dg-item-service" />
         <module name="dg-page" />
         <module name="dg-registry" />
+        <module name="dg-search" />
         <module name="dg-sms" />
         <module name="dg-upload" />
         <module name="dg-user-interface" />
         <module name="dg-user-service" />
-        <module name="dgsearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,12 +33,12 @@
       <module name="dg-item-service" target="1.8" />
       <module name="dg-page" target="1.8" />
       <module name="dg-registry" target="1.8" />
+      <module name="dg-search" target="1.8" />
       <module name="dg-sms" target="1.8" />
       <module name="dg-upload" target="1.8" />
       <module name="dg-user" target="1.8" />
       <module name="dg-user-interface" target="1.8" />
       <module name="dg-user-service" target="1.8" />
-      <module name="dgsearch" target="1.8" />
       <module name="donggua" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -54,11 +54,11 @@
       <module name="dg-item-service" options="-parameters" />
       <module name="dg-page" options="-parameters" />
       <module name="dg-registry" options="-parameters" />
+      <module name="dg-search" options="-parameters" />
       <module name="dg-sms" options="-parameters" />
       <module name="dg-upload" options="-parameters" />
       <module name="dg-user-interface" options="-parameters" />
       <module name="dg-user-service" options="-parameters" />
-      <module name="dgsearch" options="-parameters" />
     </option>
   </component>
 </project>

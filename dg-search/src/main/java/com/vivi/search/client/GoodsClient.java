@@ -16,5 +16,4 @@ import java.util.List;
 
 @FeignClient("item-service")
 public interface GoodsClient extends GoodsApi {
-
 }

@@ -151,6 +151,7 @@ public class GoodsService {
         Sku record = new Sku();
         record.setSpuId(spuId);
         List<Sku> skus = this.skuMapper.select(record);
+
         for (Sku sku : skus) {
             // 同时查询出库存
             sku.setStock(this.stockMapper.selectByPrimaryKey(sku.getId()).getStock());

@@ -16,7 +16,7 @@ zuul:
     user-service: /user/** # 用户微服务
     auth-service: /auth/** # 授权中心微服务
   add-host-header: true #携带请求本身的header信息
-  sensitive-headers: 
+  sensitive-headers: #配置禁止使用的头信息，这里设置null，就不会过滤掉
 
 ribbon:
   ConnectTimeout: 10000 # 连接超时时间(ms)
@@ -31,3 +31,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMillisecond: 50000 # 熔断超时时长：10000ms
+dg:
+  jwt:
+    pubKeyPath: /Users/vi-vibro/Desktop/RSA/rsa_public_key.pub # 公钥地址
+    cookieName: DG_TOKEN

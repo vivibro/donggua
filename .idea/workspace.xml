@@ -2,53 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d81bbc-ca5d-427a-be5b-95a2164fc405" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/dg-auth-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/entity/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/ObjectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/RsaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/dg-auth-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/DgAuthApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/client/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/config/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/web/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/dg-auth.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-auth/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-interface/dg-user-interface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-interface/src/main/java/com/vivi/user/UserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-interface/src/main/java/com/vivi/user/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-service/dg-user-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/DgUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/user/utils/CodecUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/user/web/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/dg-user.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/filterProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/filter/AuthFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_0_0_RC1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-auth/dg-auth-common/target/classes/com/vivi/utils/JwtUtils$JwtConstans.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/target/classes/com/vivi/utils/JwtUtils$JwtConstans.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-auth/dg-auth-common/target/classes/com/vivi/utils/JwtUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-auth/dg-auth-common/target/classes/com/vivi/utils/JwtUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/web/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/web/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-auth/dg-auth-service/target/classes/com/vivi/auth/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/target/classes/com/vivi/auth/service/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-auth/dg-auth-service/target/classes/com/vivi/auth/web/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-auth/dg-auth-service/target/classes/com/vivi/auth/web/AuthController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg-common/src/main/java/com/vivi/common/enums/ExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-common/src/main/java/com/vivi/common/enums/ExceptionEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg-common/target/classes/META-INF/dg-common.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dg-common/target/classes/com/vivi/common/enums/ExceptionEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-common/target/classes/com/vivi/common/enums/ExceptionEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-gateway/dg-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dg-gateway/dg-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dg-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dg-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dg-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/BrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/sms/config/SmsProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/sms/config/SmsProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/sms/mq/SmsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/sms/mq/SmsListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-item/dg-item-service/target/classes/com/vivi/item/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-item/dg-item-service/target/classes/com/vivi/item/service/BrandService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-item/dg-item-service/target/classes/com/vivi/item/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-item/dg-item-service/target/classes/com/vivi/item/service/GoodsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-item/dg-item-service/target/classes/com/vivi/item/web/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-item/dg-item-service/target/classes/com/vivi/item/web/BrandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-item/dg-item-service/target/classes/com/vivi/item/web/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-item/dg-item-service/target/classes/com/vivi/item/web/GoodsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-search/dgsearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dg-search/dg-search.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/client/GoodsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/client/GoodsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/mq/ItemListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/mq/ItemListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-search/src/test/java/com/vivi/search/repository/GoodsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-search/src/test/java/com/vivi/search/repository/GoodsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-search/target/classes/com/vivi/search/mq/ItemListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-search/target/classes/com/vivi/search/mq/ItemListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg-search/target/test-classes/com/vivi/search/repository/GoodsRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dg-search/target/test-classes/com/vivi/search/repository/GoodsRepositoryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg-sms/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dg-sms/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg-sms/src/test/java/com/vivi/demo/SmsDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dg-sms/src/test/java/com/vivi/demo/SmsDemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dysms-demo/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dg-common/target/" />
@@ -81,67 +69,105 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/web/AuthController.java">
+        <entry file="file://$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/client/GoodsClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/GoodsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="204">
+              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/GoodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dg-search/src/test/java/com/vivi/search/repository/GoodsRepositoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/filter/AuthFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-284">
+              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/CategoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="32" column="67" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+            <state relative-caret-position="387">
+              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/client/UserClient.java">
+        <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/filterProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="8" />
+            <state relative-caret-position="105">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/config/JwtProperties.java">
+        <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/GlobalCorsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-305">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="10" column="6" selection-start-line="10" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/service/AuthService.java">
+        <entry file="file://$PROJECT_DIR$/dg-item/dg-item-interface/src/main/java/com/vivi/item/pojo/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -188,6 +214,8 @@
       <find>log</find>
       <find>JwtConstans</find>
       <find>queryBrandByCName</find>
+      <find>querySkuBySpuId</find>
+      <find>distinct</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -210,18 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/mq/ItemListener.java" />
-        <option value="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/service/SearchService.java" />
-        <option value="$PROJECT_DIR$/dg-page/pom.xml" />
-        <option value="$PROJECT_DIR$/dg-page/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/dg-page/src/main/java/com/vivi/page/mq/ItemListener.java" />
-        <option value="$PROJECT_DIR$/dg-page/src/main/java/com/vivi/page/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/dg-page/src/main/java/com/vivi/page/web/PageController.java" />
-        <option value="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/GoodsController.java" />
-        <option value="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/BrandService.java" />
-        <option value="$PROJECT_DIR$/dg-upload/pom.xml" />
-        <option value="$PROJECT_DIR$/dysms-demo/pom.xml" />
         <option value="$PROJECT_DIR$/dg-sms/src/main/java/com.vivi.demo/SmsDemo.java" />
         <option value="$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/DgSmsApplication.java" />
         <option value="$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/sms/utils/SmsUtils.java" />
@@ -229,7 +245,6 @@
         <option value="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/LeyouUserApplication.java" />
         <option value="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/DgUserApplication.java" />
         <option value="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/user/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/dg-sms/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/sms/config/SmsProperties.java" />
         <option value="$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/sms/mq/SmsListener.java" />
         <option value="$PROJECT_DIR$/dg-sms/src/test/java/com/vivi/demo/SmsDemoTest.java" />
@@ -248,19 +263,32 @@
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtConstans.java" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/ObjectUtils.java" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/RsaUtils.java" />
-        <option value="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtUtils.java" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/config/JwtProperties.java" />
         <option value="$PROJECT_DIR$/dg-user/dg-user-interface/pom.xml" />
         <option value="$PROJECT_DIR$/dg-user/dg-user-interface/src/main/java/com/vivi/user/UserApi.java" />
-        <option value="$PROJECT_DIR$/dg-common/src/main/java/com/vivi/common/enums/ExceptionEnum.java" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-service/pom.xml" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/DgAuthApplication.java" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/client/UserClient.java" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/config/JwtProperties.java" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/service/AuthService.java" />
+        <option value="$PROJECT_DIR$/dg-sms/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/dg-common/src/main/java/com/vivi/common/enums/ExceptionEnum.java" />
         <option value="$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/web/AuthController.java" />
+        <option value="$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/JwtProperties.java" />
+        <option value="$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/filte/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/dg-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtUtils.java" />
+        <option value="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/client/GoodsClient.java" />
+        <option value="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/mq/ItemListener.java" />
+        <option value="$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/dg-search/src/test/java/com/vivi/search/repository/GoodsRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/GoodsController.java" />
+        <option value="$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/dg-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/filterProperties.java" />
+        <option value="$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/filter/AuthFilter.java" />
       </list>
     </option>
   </component>
@@ -279,30 +307,14 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dg-auth-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dg-auth-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dg-auth-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="com.vivi.parent:dg-user-interface:1.0-SNAPSHOT" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="y" value="23" />
-    <option name="width" value="1392" />
+    <option name="x" value="80" />
+    <option name="y" value="36" />
+    <option name="width" value="1390" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -318,17 +330,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
               <item name="donggua" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donggua" type="462c0819:PsiDirectoryNode" />
-              <item name="dg-auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
@@ -347,6 +356,68 @@
               <item name="dg-gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="donggua" type="462c0819:PsiDirectoryNode" />
+              <item name="dg-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="donggua" type="462c0819:PsiDirectoryNode" />
+              <item name="dg-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="donggua" type="462c0819:PsiDirectoryNode" />
+              <item name="dg-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="vivi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="donggua" type="462c0819:PsiDirectoryNode" />
+              <item name="dg-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="vivi" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="donggua" type="462c0819:PsiDirectoryNode" />
+              <item name="dg-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="vivi" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="donggua" type="462c0819:PsiDirectoryNode" />
+              <item name="dg-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="vivi" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
@@ -359,19 +430,12 @@
             <path>
               <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
               <item name="donggua" type="462c0819:PsiDirectoryNode" />
-              <item name="dg-search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donggua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donggua" type="462c0819:PsiDirectoryNode" />
               <item name="uploadfile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,7 +445,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566740636200" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567244053168" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/dg-search/src/main/java/com/vivi" />
@@ -402,18 +466,19 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dg-sms/src/main/java/com.vivi.demo" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.vivi.common.utils" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.vivi.page.mq" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/user/utils" />
       <recent name="$PROJECT_DIR$/dg-page/src/main/resources/templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vivi.gateway.config" />
+      <recent name="com.vivi.page.mq" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dg-sms/src/main/java/com.vivi.demo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -433,9 +498,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DgAuthApplication">
+  <component name="RunManager" selected="JUnit.GoodsRepositoryTest.loadData">
     <configuration name="GoodsRepositoryTest.loadData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dgsearch" />
+      <module name="dg-search" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.vivi.search.repository.*" />
@@ -451,7 +516,7 @@
       </method>
     </configuration>
     <configuration name="GoodsRepositoryTest.testCreatIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dgsearch" />
+      <module name="dg-search" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.vivi.search.repository.*" />
@@ -540,7 +605,7 @@
       </method>
     </configuration>
     <configuration name="DgSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="dgsearch" />
+      <module name="dg-search" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vivi.DgSearchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -570,25 +635,25 @@
     <list>
       <item itemvalue="JUnit.GoodsRepositoryTest.testCreatIndex" />
       <item itemvalue="JUnit.GoodsRepositoryTest.loadData" />
+      <item itemvalue="JUnit.GoodsServiceTest.createHtml" />
+      <item itemvalue="JUnit.SmsDemoTest.sendSms" />
       <item itemvalue="Spring Boot.DgRegistry" />
       <item itemvalue="Spring Boot.DgGateway" />
       <item itemvalue="Spring Boot.DgItemApplication" />
       <item itemvalue="Spring Boot.DgUploadApplication" />
       <item itemvalue="Spring Boot.DgSearchApplication" />
-      <item itemvalue="Spring Boot.DgPageApplication" />
-      <item itemvalue="JUnit.GoodsServiceTest.createHtml" />
       <item itemvalue="Spring Boot.DgSmsApplication" />
       <item itemvalue="Spring Boot.DgUserApplication" />
-      <item itemvalue="JUnit.SmsDemoTest.sendSms" />
       <item itemvalue="Spring Boot.DgAuthApplication" />
+      <item itemvalue="Spring Boot.DgPageApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SmsDemoTest.sendSms" />
-        <item itemvalue="Spring Boot.DgPageApplication" />
-        <item itemvalue="JUnit.GoodsServiceTest.createHtml" />
         <item itemvalue="JUnit.GoodsRepositoryTest.loadData" />
         <item itemvalue="JUnit.GoodsRepositoryTest.testCreatIndex" />
+        <item itemvalue="Spring Boot.DgPageApplication" />
+        <item itemvalue="JUnit.SmsDemoTest.sendSms" />
+        <item itemvalue="JUnit.GoodsServiceTest.createHtml" />
       </list>
     </recent_temporary>
   </component>
@@ -622,26 +687,13 @@
       <workItem from="1562899294707" duration="9386000" />
       <workItem from="1563085450420" duration="27776000" />
       <workItem from="1563783272884" duration="4884000" />
-      <workItem from="1563934032562" duration="208428000" />
+      <workItem from="1563934032562" duration="210469000" />
+      <workItem from="1566788610454" duration="1625000" />
+      <workItem from="1567164833282" duration="21601000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GoodsRepositoryTest_loadData - 2019.07.27 at 22h 46m 47s.xml">
-      <configuration name="GoodsRepositoryTest.loadData" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GoodsRepositoryTest_loadData - 2019.07.29 at 13h 26m 03s.xml">
-      <configuration name="GoodsRepositoryTest.loadData" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GoodsServiceTest_createHtml - 2019.08.05 at 21h 14m 40s.xml">
-      <configuration name="GoodsServiceTest.createHtml" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SmsDemoTest_sendSms - 2019.08.23 at 16h 29m 34s.xml">
-      <configuration name="SmsDemoTest.sendSms" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SmsDemoTest_sendSms - 2019.08.23 at 16h 31m 55s.xml">
-      <configuration name="SmsDemoTest.sendSms" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SmsDemoTest_sendSms - 2019.08.23 at 16h 32m 23s.xml">
       <configuration name="SmsDemoTest.sendSms" configurationId="JUnit" />
     </history-entry>
@@ -657,9 +709,24 @@
     <history-entry file="SmsDemoTest_sendSms - 2019.08.23 at 16h 47m 41s.xml">
       <configuration name="SmsDemoTest.sendSms" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GoodsRepositoryTest_testCreatIndex - 2019.08.31 at 13h 47m 14s.xml">
+      <configuration name="GoodsRepositoryTest.testCreatIndex" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GoodsRepositoryTest_loadData - 2019.08.31 at 13h 47m 48s.xml">
+      <configuration name="GoodsRepositoryTest.loadData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GoodsRepositoryTest_loadData - 2019.08.31 at 14h 19m 38s.xml">
+      <configuration name="GoodsRepositoryTest.loadData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GoodsRepositoryTest_loadData - 2019.08.31 at 14h 22m 29s.xml">
+      <configuration name="GoodsRepositoryTest.loadData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GoodsRepositoryTest_loadData - 2019.08.31 at 15h 57m 55s.xml">
+      <configuration name="GoodsRepositoryTest.loadData" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328044000" />
+    <option name="totallyTimeSpent" value="353311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,10 +738,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1392" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1394" height="877" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="106" y="190" width="418" height="594" id="Project" order="0" sideWeight="0.5954825" visible="true" weight="0.30962962" />
+      <window_info content_ui="combo" x="106" y="190" width="418" height="594" id="Project" order="0" sideWeight="0.5954825" visible="true" weight="0.26849112" />
       <window_info id="Structure" order="1" sideWeight="0.40451744" side_tool="true" weight="0.30962962" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -704,7 +770,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962963" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.3288889" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32832617" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -715,227 +781,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/GlobalCorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/security/PublicKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.0/jjwt-0.9.0.jar!/io/jsonwebtoken/impl/DefaultJwtBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.0/jjwt-0.9.0.jar!/io/jsonwebtoken/Jwts.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-          <folding>
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.0/jjwt-0.9.0-sources.jar!/io/jsonwebtoken/Jwts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtConstans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-sms/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="22" selection-start-line="10" selection-start-column="2" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-user/dg-user-interface/src/main/java/com/vivi/user/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-user/dg-user-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-sms/src/main/java/com/vivi/sms/config/SmsProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-common/src/main/java/com/vivi/common/utils/CookieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="98" column="32" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-user/dg-user-service/src/main/java/com/vivi/user/web/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="67" column="83" selection-start-line="65" selection-start-column="4" selection-end-line="67" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-user/dg-user-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-user/dg-user-interface/src/main/java/com/vivi/user/UserApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-common/src/main/java/com/vivi/common/enums/ExceptionEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/target/classes/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE-sources.jar!/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="143" selection-start-line="143" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE-sources.jar!/org/springframework/beans/factory/config/DependencyDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="250" selection-start-line="250" selection-end-line="250" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE-sources.jar!/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="379" selection-start-line="379" selection-end-line="379" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.4.RELEASE/spring-boot-2.0.4.RELEASE.jar!/org/springframework/boot/web/servlet/context/ServletWebServerApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.4.RELEASE/spring-boot-2.0.4.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="556" selection-start-line="556" selection-end-line="556" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="758" selection-start-line="758" selection-end-line="758" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -1000,41 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/entity/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/ObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/RsaUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dg-auth/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1056,9 +866,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dg-common/src/main/java/com/vivi/common/enums/ExceptionEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-sms/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/client/UserClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="60">
           <caret line="5" selection-start-line="5" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1068,8 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/config/JwtProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-305">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="90">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1078,18 +902,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/service/AuthService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/web/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="375">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1098,15 +912,258 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/DgGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/JwtProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/security/PrivateKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/JwtUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/ObjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-common/src/main/java/com/vivi/utils/RsaUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="79" column="11" lean-forward="true" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-auth/dg-auth-service/src/main/java/com/vivi/auth/web/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-common/src/main/java/com/vivi/common/utils/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-587">
+          <caret line="136" column="33" lean-forward="true" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-page/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-page/src/main/resources/templates/item.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/client/CategoryClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/DgItemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/web/searchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-interface/src/main/java/com/vivi/item/api/GoodsApi.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/mq/ItemListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-page/src/main/java/com/vivi/page/web/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/service/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-interface/src/main/java/com/vivi/item/pojo/SpuBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-interface/src/main/java/com/vivi/item/pojo/Spu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-interface/src/main/java/com/vivi/item/pojo/Sku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-search/src/main/java/com/vivi/search/client/GoodsClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-interface/src/main/java/com/vivi/item/pojo/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="32" column="67" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/web/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-item/dg-item-service/src/main/java/com/vivi/item/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-search/src/test/java/com/vivi/search/repository/GoodsRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        <state relative-caret-position="387">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/GlobalCorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10" column="6" selection-start-line="10" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/config/filterProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dg-gateway/src/main/java/com/vivi/gateway/filter/AuthFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1162,12 +1219,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>dg-sms</last-edited>
+          <last-edited>Spring|dg-auth-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -64,6 +64,7 @@ public class GoodsRepositoryTest {
             try {
                 System.out.println("spu id" + spu.getId());
                 Goods goods = this.searchService.buildGoods(spu);
+                System.out.println("spu id" + spu.getId());
                 goodsList.add(goods);
             } catch (IOException e) {
                 System.out.println("查询失败：" + spu.getId());

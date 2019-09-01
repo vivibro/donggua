@@ -67,7 +67,7 @@ public class SearchService {
 
     private ObjectMapper mapper = new ObjectMapper();
 
-//导入索引数据
+    //导入索引数据
     public Goods buildGoods(Spu spu)throws IOException  {
         Goods Good = new Goods();
 

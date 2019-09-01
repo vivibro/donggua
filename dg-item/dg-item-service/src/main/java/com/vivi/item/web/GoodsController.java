@@ -20,8 +20,6 @@ public class GoodsController {
     @Autowired
     private GoodsService goodsService;
 
-
-
 //    获取商品清单列表
     @GetMapping("/spu/page")
     public ResponseEntity<PageResult<SpuBo>> querySpuByPage(
@@ -31,7 +29,6 @@ public class GoodsController {
             @RequestParam(value = "saleable",defaultValue = "true") Boolean saleable,
             @RequestParam(value = "sortBy", required = false) String sortBy,
             @RequestParam(value = "desc", defaultValue = "false") Boolean desc){
-        System.out.print("1");
         // 分页查询spu信息
         PageResult<SpuBo> result = this.goodsService.querySpuByPageAndSort(page, rows,saleable, key,sortBy,desc);
         if (result == null || result.getItems().size() == 0) {
@@ -51,9 +48,11 @@ public class GoodsController {
         }
         return ResponseEntity.ok(detail);
     }
+
 //    查询sku
     @GetMapping("/sku/list")
     public ResponseEntity<List<Sku>> querySkuBySpuId(@RequestParam("id") Long id) {
+//        System.out.println(id);
       List<Sku> skus = this.goodsService.querySkuBySpuId(id);
       if (skus == null || skus.size() == 0) {
           return new ResponseEntity<>(HttpStatus.NOT_FOUND);

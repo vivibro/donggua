@@ -54,7 +54,6 @@ public class JwtUtils {
                 .signWith(SignatureAlgorithm.RS256, RsaUtils.getPrivateKey(privateKey))
                 .compact();
     }
-
     /**
      * 公钥解析token
      *

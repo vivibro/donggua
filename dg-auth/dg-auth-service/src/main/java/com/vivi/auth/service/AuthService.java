@@ -34,8 +34,8 @@ public class AuthService {
             String token = JwtUtils.generateToken(userInfo, prop.getPrivateKey(), prop.getExpire());
             return token;
         }catch (Exception e){
-            log.error("[授权中心] 生成token失败，用户名称:{}",username);
-            throw new DgException(ExceptionEnum.CREATE_TOKEN_FAIL);
+            log.error("[授权中心] 用户名或密码错误，用户名称:{}",username);
+            throw new DgException(ExceptionEnum.INVALID_USERNAME_OR_PASSWORD);
         }
 
     }

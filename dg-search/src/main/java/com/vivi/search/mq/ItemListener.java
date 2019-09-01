@@ -13,6 +13,7 @@ import java.io.IOException;
 
 @Component
 public class ItemListener {
+
     @Autowired
     SearchService searchService;
     @RabbitListener(bindings = @QueueBinding(
@@ -24,7 +25,6 @@ public class ItemListener {
         if(spuID == null)return;
 //        索引库新增
         searchService.creatOrUpdateIndex(spuID);
-
     }
 
     @RabbitListener(bindings = @QueueBinding(
@@ -34,7 +34,7 @@ public class ItemListener {
     ))
     public void listenDelete (Long spuID) throws IOException {
         if(spuID == null)return;
-//        索引库新增
+//        索引库删除
         searchService.deleteIndex(spuID);
 
     }
