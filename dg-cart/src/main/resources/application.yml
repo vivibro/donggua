@@ -1,0 +1,15 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: cart-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+
+dg:
+  jwt:
+    pubKeyPath: /Users/vi-vibro/Desktop/RSA/rsa_public_key.pub # 公钥地址
+    cookieName: DG_TOKEN
+

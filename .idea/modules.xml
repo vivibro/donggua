@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/dg-auth/dg-auth.iml" filepath="$PROJECT_DIR$/dg-auth/dg-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-auth/dg-auth-common/dg-auth-common.iml" filepath="$PROJECT_DIR$/dg-auth/dg-auth-common/dg-auth-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-auth/dg-auth-service/dg-auth-service.iml" filepath="$PROJECT_DIR$/dg-auth/dg-auth-service/dg-auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg-cart/dg-cart.iml" filepath="$PROJECT_DIR$/dg-cart/dg-cart.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-common/dg-common.iml" filepath="$PROJECT_DIR$/dg-common/dg-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-gateway/dg-gateway.iml" filepath="$PROJECT_DIR$/dg-gateway/dg-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/dg-item/dg-item.iml" filepath="$PROJECT_DIR$/dg-item/dg-item.iml" />

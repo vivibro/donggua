@@ -41,16 +41,17 @@ public class AuthFilter extends ZuulFilter {
     //是否启用
     @Override
     public boolean shouldFilter() {
-        String requestURL = ctx.getRequest().getRequestURI();
-        return isUnAllowPath(requestURL);
+        RequestContext ctx = RequestContext.getCurrentContext();
+        String requestURI = ctx.getRequest().getRequestURI();
+        return isUnAllowPath(requestURI);
     }
 
 //    判断白名单
-    public boolean isUnAllowPath(String url){
+    public boolean isUnAllowPath(String URI){
         boolean flag = true;
         for (String allow:fprop.getAllowPaths()) {
-            if(url.startsWith(allow)){
-                return false;
+            if(URI.startsWith(allow)){
+                flag = false;
             }
         }
         return flag;
@@ -60,12 +61,10 @@ public class AuthFilter extends ZuulFilter {
     @Autowired
     private filterProperties fprop;
 
-    private RequestContext ctx = RequestContext.getCurrentContext();
-
     @Override
     public Object run() throws ZuulException {
         //获取上下文
-//        RequestContext ctx = RequestContext.getCurrentContext();
+        RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         Cookie[] cookies = request.getCookies();
         try{

@@ -674,7 +674,8 @@
             addCart(){
                 ly.verifyUser().then(res => {
                     //已经登录发送消息到后台，保存到redis中
-                    ly.http.post("/cart",{skuId:this.sku.id,num:this.num}).then(res => {
+                    ly.http.post("/cart",{skuId:this.sku.id,num:this.num
+                    }).then(res => {
                         window.location = "http://www.leyou.com/cart.html";
                     })
                 }).catch(() =>{
@@ -701,7 +702,7 @@
                     //5.把carts写回到localStorage
                     ly.store.set("carts",carts);
                     //6.跳转
-                    window.location.href = "http://www.leyou.com/cart.html";
+                    window.location.href = "http://www.donggua.com/cart.html";
                 });
             }
         }

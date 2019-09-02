@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="dg-auth-common" />
         <module name="dg-auth-service" />
+        <module name="dg-cart" />
         <module name="dg-common" />
         <module name="dg-gateway" />
         <module name="dg-item-interface" />
@@ -25,6 +26,7 @@
       <module name="dg-auth" target="1.8" />
       <module name="dg-auth-common" target="1.8" />
       <module name="dg-auth-service" target="1.8" />
+      <module name="dg-cart" target="1.8" />
       <module name="dg-common" target="1.8" />
       <module name="dg-elasticsearch" target="1.8" />
       <module name="dg-gateway" target="1.8" />
@@ -47,6 +49,7 @@
       <module name="dg-auth" options="-parameters" />
       <module name="dg-auth-common" options="-parameters" />
       <module name="dg-auth-service" options="-parameters" />
+      <module name="dg-cart" options="-parameters" />
       <module name="dg-common" options="-parameters" />
       <module name="dg-elasticsearch" options="-parameters" />
       <module name="dg-gateway" options="-parameters" />

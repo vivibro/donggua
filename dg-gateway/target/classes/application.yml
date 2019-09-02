@@ -35,3 +35,11 @@ dg:
   jwt:
     pubKeyPath: /Users/vi-vibro/Desktop/RSA/rsa_public_key.pub # 公钥地址
     cookieName: DG_TOKEN
+  filter:
+    allowPaths:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item

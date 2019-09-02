@@ -19,6 +19,7 @@
         <module>dg-sms</module>
         <module>dg-user</module>
         <module>dg-auth</module>
+        <module>dg-cart</module>
     </modules>
 
     <name>donggua</name>
