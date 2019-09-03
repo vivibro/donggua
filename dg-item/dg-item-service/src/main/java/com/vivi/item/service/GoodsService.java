@@ -198,4 +198,8 @@ public class GoodsService {
         spuDetailMapper.deleteByPrimaryKey(spuBo.getId());
         sendMessage(spuBo.getId(),"delete");
     }
+
+    public Sku querySkuById(Long id) {
+        return skuMapper.selectByPrimaryKey(id);
+    }
 }

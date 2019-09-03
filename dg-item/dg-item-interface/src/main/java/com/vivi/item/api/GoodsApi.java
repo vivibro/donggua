@@ -5,6 +5,7 @@ import com.vivi.item.pojo.Sku;
 import com.vivi.item.pojo.Spu;
 import com.vivi.item.pojo.SpuBo;
 import com.vivi.item.pojo.SpuDetail;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,4 +27,6 @@ public interface GoodsApi {
             @RequestParam(value = "saleable",defaultValue = "true") Boolean saleable);
     @GetMapping("spu/{id}")
     Spu querySpuById(@RequestParam("id") Long id);
+    @GetMapping("{id}")
+    Sku querySkuById(@PathVariable("id")Long id);
 }
