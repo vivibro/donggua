@@ -6,8 +6,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vivi.cart.client.GoodsClient;
 import com.vivi.cart.interceptor.UserInterceptor;
 import com.vivi.cart.pojo.Cart;
-import com.vivi.common.advice.exception.DgException;
-import com.vivi.common.enums.ExceptionEnum;
 import com.vivi.common.utils.JsonUtils;
 import com.vivi.entity.UserInfo;
 import com.vivi.item.pojo.Sku;
@@ -16,7 +14,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.BoundHashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Service;
@@ -59,7 +56,7 @@ public class CartService {
             ops.put(hashkey, JsonUtils.serialize(cart));
         }
     }
-
+//  查询购物车
     public List<Cart> queryCartList() {
         UserInfo userInfo = UserInterceptor.getThreadLocal();
         String key = KEY_PREFIX + userInfo.getId();
@@ -74,15 +71,31 @@ public class CartService {
         return carts;
     }
 
+//    更新购物车数量
     public void updateCartList(Cart cart) {
         //        从线程域中取出userinfo
         UserInfo userInfo = UserInterceptor.getThreadLocal();
         String key = KEY_PREFIX + userInfo.getId();
+        Long skuId = cart.getSkuId();
 //        绑定key
         BoundHashOperations<String,Object,Object> ops = redisTemplate.boundHashOps(key);
-        ops.put(cart.getSkuId().toString(), cart.getNum());
+        String oldcart = ops.get(skuId.toString()).toString();
+        Cart parse = JsonUtils.parse(oldcart, Cart.class);
+        parse.setNum(cart.getNum());
+        String serialize = JsonUtils.serialize(parse);
+        ops.put(skuId.toString(),serialize);
+    }
+//    删除
+    public void deleteCart(String skuId) {
+        // 获取登录用户
+        UserInfo user = UserInterceptor.getThreadLocal();
+        String key = KEY_PREFIX + user.getId();
+        BoundHashOperations<String, Object, Object> hashOps = this.redisTemplate.boundHashOps(key);
+        hashOps.delete(skuId);
     }
 
+
+//    修改redis序列化方式
     @Bean
     public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<Object, Object> redisTemplate = new RedisTemplate<>();
@@ -103,4 +116,6 @@ public class CartService {
         redisTemplate.afterPropertiesSet();
         return redisTemplate;
     }
+
+
 }

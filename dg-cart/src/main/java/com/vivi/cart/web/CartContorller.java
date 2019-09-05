@@ -3,15 +3,11 @@ package com.vivi.cart.web;
 
 import com.vivi.cart.pojo.Cart;
 import com.vivi.cart.service.CartService;
-import org.apache.http.protocol.HTTP;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,9 +33,17 @@ public class CartContorller {
         }
         return ResponseEntity.ok(carts);
     }
-    @PutMapping
+//    购物车内容更新
+    @PostMapping("/up")
     public ResponseEntity<Void> updateCartList(@RequestBody Cart cart) {
         this.cartService.updateCartList(cart);
         return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+
+//    购物车删除
+    @DeleteMapping("{skuId}")
+    public ResponseEntity<Void> deleteCart(@PathVariable("skuId") String skuId) {
+        this.cartService.deleteCart(skuId);
+        return ResponseEntity.ok().build();
     }
 }

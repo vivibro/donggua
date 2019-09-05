@@ -1,0 +1,27 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/yun6?characterEncoding=utf-8
+    username: root
+    password: root
+  jackson:
+    default-property-inclusion: non_null
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+mybatis:
+  type-aliases-package: com.donggua.order.pojo
+dg:
+  jwt:
+    pubKeyPath: /Users/vi-vibro/Desktop/RSA/rsa_public_key.pub # 公钥地址
+    cookieName: DG_TOKEN
+  worker:
+    workerId: 1
+    datacenterId: 1

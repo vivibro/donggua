@@ -20,6 +20,7 @@
         <module>dg-user</module>
         <module>dg-auth</module>
         <module>dg-cart</module>
+        <module>dg-order</module>
     </modules>
 
     <name>donggua</name>

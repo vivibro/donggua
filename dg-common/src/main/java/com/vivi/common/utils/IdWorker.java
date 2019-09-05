@@ -1,5 +1,7 @@
 package com.vivi.common.utils;
 
+import org.springframework.context.annotation.Bean;
+
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
