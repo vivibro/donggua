@@ -1,6 +1,7 @@
 # donggua
 
 冬瓜商城，基于springcloud微服务框架
+
 ● 该项目为个人练手的电商项目.
 ● 基于SpringCloud的分布式项目。涉及到的技术栈：Spring、SpringMVC、Mybtis、SpringBoot、RabbitMQ、MySql、Redis、Nginx、微信支付、阿里短信平台接入、基于JWT实现的单点登录、FastDFS文件系统等
 包含以下微服务集群：
