@@ -21,6 +21,12 @@ public enum ExceptionEnum {
     INVALID_USERNAME_OR_PASSWORD("用户名或密码有误",400),
     UNAUTHORIZED("无权访问",403),
     CART_NOT_FOUND("购物车为空",404),
+    GOOD_STOCK_IS_NULL("商品库存不足",404),
+    WX_PAY_ORDER_FAIL("微信下单失败",500),
+    ORDER_STATUS_ERR("订单状态异常",403),
+    SIGN_INVALID("无效签名",400),
+    TOTAL_FEE_ERR("金额不符",400),
+    UPDATE_ORDER_STATUS_ERR("更新订单状态失败",400),
     CREATE_TOKEN_FAIL("用户凭证生成失败",500);
 
     private String msg;

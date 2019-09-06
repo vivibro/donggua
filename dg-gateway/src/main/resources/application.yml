@@ -45,3 +45,4 @@ dg:
       - /api/user/check
       - /api/user/code
       - /api/item
+      - /api/order/notify
