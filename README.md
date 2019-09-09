@@ -14,4 +14,4 @@
 ● Zuul网关服务  
 ● 短信服务：通过监听RabbitMQ消息来发送模板短信。  
 
-![image](https://.com/vivibro/donggua/master/images/冬瓜商城.png)
+![image](https://github.com/vivibro/donggua/blob/master/images/%E5%86%AC%E7%93%9C%E5%95%86%E5%9F%8E.png)
