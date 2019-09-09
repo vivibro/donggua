@@ -96,9 +96,6 @@ public class GoodsService {
                 num++;
             }
 
-
-
-
             Map<Integer,String> csiname = new HashMap<>();
             Map<Integer,Object> csinvalue = new HashMap<>();
             String specificationsJson = spuDetail.getSpecifications();

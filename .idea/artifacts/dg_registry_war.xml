@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dg-registry:war">
+    <output-path>$PROJECT_DIR$/dg-registry/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>dg-registry</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="dg-registry-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="dg-registry:war exploded" />
+    </root>
+  </artifact>
+</component>

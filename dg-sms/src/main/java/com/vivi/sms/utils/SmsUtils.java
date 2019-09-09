@@ -52,7 +52,6 @@ public class SmsUtils {
             //选填-上行短信扩展码(无特殊需求用户请忽略此字段)
             //request.setSmsUpExtendCode("90997");
 
-
             //hint 此处可能会抛出异常，注意catch
             SendSmsResponse sendSmsResponse = acsClient.getAcsResponse(request);
             if (sendSmsResponse.getCode().equals("ok")) {

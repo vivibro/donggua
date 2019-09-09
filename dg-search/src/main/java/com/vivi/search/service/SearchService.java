@@ -185,6 +185,7 @@ public class SearchService {
         return searchResult;
     }
 
+
     private QueryBuilder buildBasicQuert(SearchRequest request) {
         BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery();
         //基本查询条件
