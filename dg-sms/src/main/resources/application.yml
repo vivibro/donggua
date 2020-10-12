@@ -13,7 +13,7 @@ spring:
 #用于可变参数传递
 dg:
   sms:
-    accessKeyId: LTAI4arl2Kfy7V5Q
-    accessKeySecret: ghziLep8vp8Gg7TF9R3zxrmBk43TPg
+    accessKeyId: XXX
+    accessKeySecret: XXX
     signName: 冬瓜商城 #签名名称
     verifyCodeTemplate: SMS_172970120 #模板编号
